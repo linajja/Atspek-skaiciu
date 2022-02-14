@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .visible {
+        display: none;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 300px;
+        margin: 15px;
+        border: 1px solid yellowgreen;
+    }
+
+    .forma {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 300px;
+        margin: 15px;
+        border: 1px solid yellowgreen;
+    }
+
+    .margin {
+        margin: 10px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .btn {
+        color: #fff;
+        padding: 10px 30px;
+        background-color: #417241;
+        border: 2px solid #bebe03;
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body class="body" id="body">
+    <form name="pirma" class="forma">
+        <div class="margin">
+            Atspėk skaičių nuo 0 iki 100:
+        </div>
+        <div>
+            <input class="margin" type="number" name="number">
+        </div>
+
+        <button class="margin btn" type="submit">
+            Submit
+        </button>
+    </form>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
